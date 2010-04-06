@@ -1,3 +1,6 @@
-RewriteEngine on
-RewriteRule ^[a-z0-9]+$ index.php [L]
-ErrorDocument 404 /index.php
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f # If not a file...
+RewriteCond %{REQUEST_FILENAME} !-d # and not a directory...
+RewriteRule . /index.php [L]        # serve index.php
