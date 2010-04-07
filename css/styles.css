@@ -1,0 +1,76 @@
+
+html, body
+{
+	padding:0; margin:0;
+	font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:1.7em;
+}
+
+body
+{
+	background:-webkit-gradient(radial, 50% 50%, 400, 50% 50%, 1000, from(#fff), to(#999), color-stop(50%, #eee)) fixed;
+	padding:0 0 0 0;
+}
+
+
+h1
+{
+	position:fixed; right:50%; top:20%;
+	margin:0 120px 0 0; padding:0;
+	
+	-webkit-mask:url(../images/logo.svg) no-repeat;
+	background:-webkit-gradient(linear, 0% 100%, 0% 0%, from(#8BE8E2), to(#479687));
+	width:210px; height:170px;
+	text-indent:-1000em;	
+}
+
+
+#main
+{
+	position:relative; left:50%; top:20%;
+	width:400px;
+	margin:53px 0 20% -100px;
+	
+	text-shadow:0 1px 10px #bbb;
+}
+
+
+
+.section
+{
+	padding:10px; margin:10px 0 0 0;
+	-webkit-box-shadow:3px 3px 60px rgba(0,0,0,0.08);
+}
+
+
+h2
+{
+	background:-webkit-gradient(linear, 0% 100%, 0% 0%, from(#8BE8E2), to(#479687));
+	-webkit-background-clip:text;
+	color:transparent;
+	-webkit-text-stroke: 1px transparent;
+	
+	margin:0; padding:0;
+	font-size:20px; line-height:20px; font-weight:bold; letter-spacing:0px; text-transform:uppercase;
+
+	
+}
+
+
+.brackets
+{
+	color:#ccc;
+	text-shadow:none;
+}
+
+
+
+
+.footer
+{
+	margin:40px 0 0 0;
+	text-align:right;
+	color:#999;
+}
+
+
+
