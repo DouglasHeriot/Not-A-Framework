@@ -15,7 +15,7 @@
 
 		<?php
 		if($content[$page]['include'] !== false)
-			include('includes/'.$page.'.php');
+			include('includes/content/'.$page.'.php');
 		else
 			echo $content[$page]['content'];
 		?>		
