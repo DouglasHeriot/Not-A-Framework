@@ -1,6 +1,42 @@
+#
+# Not A Framework
+# By Douglas Heriot
+#
+# Let's get started…
+
 RewriteEngine On
 RewriteBase /
 
-RewriteCond %{REQUEST_FILENAME} !-f # If not a file...
-RewriteCond %{REQUEST_FILENAME} !-d # and not a directory...
-RewriteRule . /index.php [L]        # serve index.php
+
+
+#############################################################
+# Redirects here can override real files and folders
+#############################################################
+
+RewriteRule ^includes /index.php [L]
+#RewriteRule ^ImAFileThatYouCantSee /index.php [L]
+
+
+#############################################################
+# Allow real files and folders to be served
+# (eg. for stylesheets and images)
+#############################################################
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+#############################################################
+# Pass everything else to index.php
+#############################################################
+
+RewriteRule . /index.php [L]
+
+
+
+
+#############################################################
+# Misc permanent redirects
+#############################################################
+
+# RewriteRule ^speelling /spelling [R=302]
