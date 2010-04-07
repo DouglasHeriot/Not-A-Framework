@@ -1,7 +1,9 @@
+##############################################################
 #
 # Not A Framework
 # By Douglas Heriot
 #
+##############################################################
 # Let's get started…
 
 RewriteEngine On
@@ -39,4 +41,4 @@ RewriteRule . /index.php [L]
 # Misc permanent redirects
 #############################################################
 
-# RewriteRule ^speelling /spelling [R=302]
+# RewriteRule ^speelling /spelling [R=301]
